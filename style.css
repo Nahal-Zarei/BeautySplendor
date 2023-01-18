@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     background-color: #363B4E;
     color: #FFF;
-    height: 3000px;
 }
 
 /* Free shipping paragraph */
@@ -16,6 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Header */
@@ -23,7 +26,6 @@ body {
     max-width: 1350px;
     height: 4rem;
     margin: 0 auto;
-    /* background-color: green; */
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 3fr;
@@ -38,19 +40,9 @@ body {
     margin-left: 50px;
 }
 
-.website-logo img {
-    width: 200px;
-}
-
-.website-logo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-right: 185px;
-}
-
 .header-list {
     margin: 10px;
+    font-family: 'Raleway', sans-serif;
 }
   
 .header-list-items a {
@@ -66,6 +58,17 @@ body {
     color: #927FBF;
 }
 
+.website-logo img {
+    width: 200px;
+}
+
+.website-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 185px;
+}
+
 .webiste-icons {
     margin-right: 50px;
     display: flex;
@@ -76,6 +79,7 @@ body {
 .webiste-icons span {
     cursor: pointer;
     padding: 10px 8px;    
+    color: #FFF;
 }
 
 .ham {
@@ -150,6 +154,117 @@ body {
     width: var(--progress);
     height: 4px;
     position: fixed;
+}
+
+/* carousel item images */
+.carousel-item img {
+  height: 400px;
+}
+ 
+/* P and h2 services price */
+.services-price {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.prices-p {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+/* Water droplets card */
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #C4BBF0;
+}
+
+.card-num {
+  margin-top: 10px;
+}
+
+.cards .card{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.2), 20px 20px 40px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.cards .card.card--one{
+ border-radius: 61% 39% 70% 30% / 38% 51% 49% 62% ;
+  color: #4F3B78;
+  font-family: 'Raleway', sans-serif;
+}
+.cards .card.card--two{
+ border-radius: 64% 36% 60% 40% / 28% 71% 29% 72% ;
+ color: #4F3B78;
+ font-family: 'Raleway', sans-serif;
+}
+.cards .card.card--three{
+ border-radius: 38% 62% 70% 30% / 58% 63% 37% 42%  ;
+ color: #4F3B78;
+ font-family: 'Raleway', sans-serif;
+} 
+.cards .card:hover{
+  border-radius: 50%;
+}
+
+.content{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card-inner{
+  margin-top: 15px;
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 18px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-inner p{
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+}
+
+.card-inner h3 {
+  color: #4F3B78;
+}
+
+/* what we offer */
+.offer-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 50px 20px 50px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.offer-card {
+  width: 350px;
+  text-align: center;
+  border: #927FBF solid 1px;
+  margin: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.offer-card div, .offer-card h5 {
+  margin: 15px;
 }
 
 /* Making Responsive */

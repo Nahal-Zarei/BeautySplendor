@@ -32,13 +32,13 @@
            </nav>
             <!-- Website's Logo -->
             <div class="website-logo">
-                <img src="beautysplendor-high-resolution-logo-color-on-transparent-background.png" alt="Splendor logo" title="Splendor Logo">
+                <img src="/Images/beautysplendor-high-resolution-logo-color-on-transparent-background.png" alt="Splendor logo" title="Splendor Logo">
            </div>
             <!-- Website's Icons -->
             <div class="webiste-icons">
                 <span class="material-icons md-light" title="Search">search</span>
                 <span class="material-icons" title="Shopping Bag">shopping_bag</span>
-                <span class="material-icons" title="Sign in">perm_identity</span>
+                <a href="Login/signin.html"><span class="material-icons" title="Sign in">perm_identity</span></a>
            </div>
            <!-- Burger menu -->
            <div class="burgerContainer" onclick="burgerclick()">
@@ -54,6 +54,119 @@
         <!-- Reading progress bar -->
         <div id="progress-bar"></div>
     </header>
+       <!-- Main part of website -->
+       <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="d-block w-100" src="Images/Slider 1.png"  alt="First slide">
+            </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Images/Slider 2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Images/Slider 3.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- Services prices -->
+          <section>
+            <h2 class="services-price">Prices for our services</h2>
+            <p class="prices-p">Our skilled experts and professional makeup products lead the Industry and perfect your exceptional beauty.</p>
+            <div class="cards">
+              <div class="card card--one">
+                <div class="content">
+                  <h4 class="card-num">Express makeup</h4>
+                  <div class="card-inner">
+                    <p>Anyway, you still use Lorem Ipsum and rightly so, as it will always</p>
+                    <h3>$40</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--two">
+                    <div class="content">
+                  <h4 class="card-num">Day makeup</h4>
+                      <div class="card-inner">
+                    <p>Even if your less into design and more into content strategy</p>
+                    <h3>$55</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--three">
+                    <div class="content">
+                  <h4 class="card-num">Evening makeup</h4>
+                      <div class="card-inner">
+                    <p>But worse, what if the fish doesn't fit in the can, the foot's to big</p>
+                    <h3>$75</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- What we offer -->
+          <h2 class="offer services-price">Our brand can offer you</h2>
+          <div class="offer-cards">
+            <div class="offer-card">
+              <div>
+                <img src="https://img.icons8.com/office/40/null/lipstick.png"/>
+                <h5>Lipstick</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="offer-card">
+              <div>
+                <img src="https://img.icons8.com/office/40/null/mascara.png"/>
+                <h5>Mascara</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="offer-card">
+              <div>
+                <img src="https://img.icons8.com/office/40/null/nail-polish.png"/>
+                <h5>Nail Polish</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="offer-card">
+              <div>
+                <img src="https://img.icons8.com/office/40/null/cosmetic-brush.png"/>
+                <h5>Makeup Brush</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="offer-card">
+              <div>
+                <img src="https://img.icons8.com/office/40/null/eye-shadows.png"/>
+                <h5>Eye Shadows</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="offer-card">
+              <div>
+                <img src="https://img.icons8.com/office/40/null/cream-tube.png"/>
+                <h5>Tune</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+    </main>
+    <!-- Script tags -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
