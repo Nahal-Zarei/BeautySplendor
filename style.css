@@ -2,11 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
     box-sizing: border-box;
     background-color: #363B4E;
     color: #FFF;
+  }
+  
+  ::selection {
+    background-color:  #927FBF;
+    color: white;
+  }
+  
+  /* Reading progress bar */
+#progress-bar {
+    --progress: 0%;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: var(--progress);
+    height: 5px;
+    position: fixed;
+    top: 0;
 }
 
 /* Free shipping paragraph */
@@ -30,6 +45,7 @@ body {
     grid-auto-flow: column;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 100%;
+    background-color: #363B4E;
 }
 
 
@@ -137,7 +153,7 @@ body {
 }
 
 /* Fixed header */
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -145,25 +161,46 @@ body {
   
 .sticky + .content {
     padding-top: 102px;
+} */
+
+
+/* Arrival part */
+.newArrival-container{
+  background-color: #FFF;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+.arrival-card .card{
+  background-color: #363B4E;
+  color: #FFF;
+  display: flex;
+  margin: 15px 20px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.2), 20px 20px 40px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+  border: #363B4E solid 1px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-/* Reading progress bar */
-#progress-bar {
-    --progress: 0%;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    width: var(--progress);
-    height: 4px;
-    position: fixed;
+.cards {
+  display: flex;
+  margin: 40px 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* carousel item images */
-.carousel-item img {
-  height: 400px;
+.arrival-card img {
+  padding: 5px;
+  border-radius: 10px;
+  border: #927FBF solid 1px;
 }
- 
+
 /* P and h2 services price */
 .services-price {
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
@@ -176,41 +213,42 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 /* Water droplets card */
-.cards{
+.Prices-cards{
   display: flex;
   justify-content: space-evenly;
-  background-color: #C4BBF0;
+  background-color: #363B4E;
 }
 
 .card-num {
   margin-top: 10px;
 }
 
-.cards .card{
+.Prices-cards .card{
   position: relative;
   width: 300px;
   height: 300px;
   margin: 40px;
   box-shadow: 10px 10px 20px rgba(0,0,0,0.2), 20px 20px 40px rgba(0,0,0,0.15);
   transition: 0.3s ease;
+  border: #363B4E solid 1px;
 }
 
-.cards .card.card--one{
+.Prices-cards .card.card--one{
  border-radius: 61% 39% 70% 30% / 38% 51% 49% 62% ;
   color: #4F3B78;
   font-family: 'Raleway', sans-serif;
 }
-.cards .card.card--two{
+.Prices-cards .card.card--two{
  border-radius: 64% 36% 60% 40% / 28% 71% 29% 72% ;
  color: #4F3B78;
  font-family: 'Raleway', sans-serif;
 }
-.cards .card.card--three{
+.Prices-cards .card.card--three{
  border-radius: 38% 62% 70% 30% / 58% 63% 37% 42%  ;
  color: #4F3B78;
  font-family: 'Raleway', sans-serif;
 } 
-.cards .card:hover{
+.Prices-cards .card:hover{
   border-radius: 50%;
 }
 
@@ -245,6 +283,38 @@ body {
   color: #4F3B78;
 }
 
+/* Box */
+.Box-icon {
+  display: flex;
+  margin-right: 60px;
+}
+
+/*delete margin left and right to have full screen box*/
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #927FBF;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #363B4E;
+  color: #FFF;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+.Box-details h4 {
+  margin-left: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+.Box-details p {
+  margin-left: 5px;
+}
+
 /* what we offer */
 .offer-cards {
   display: flex;
@@ -256,7 +326,7 @@ body {
 }
 
 .offer-card {
-  width: 350px;
+  width: 300px;
   text-align: center;
   border: #927FBF solid 1px;
   margin: 20px;
@@ -266,6 +336,159 @@ body {
 .offer-card div, .offer-card h5 {
   margin: 15px;
 }
+
+/* Newsletter */
+.newsletter-signin {
+  height: 280px;
+  background-color: #FFF;
+  color: #363B4E;
+  font-family: 'Cormorant Garamond', serif;
+  position: relative;
+}
+
+.newsletter-signin h3 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.news-div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-signin input {
+  border: none;
+  border-bottom: #363B4E solid 2px;
+  margin-right: 10px;
+  width: 300px;
+  font-weight: bold;
+}
+
+.newsletter-signin button {
+  border: #363B4E solid 2px;
+  font-weight: bold;
+  color: #363B4E;
+}
+
+.newsletter-signin button:hover{
+  background-color: #363B4E;
+  color: #FFF;
+}
+
+.newsletter-signin ul {
+  background-color: #363B4E;
+  color: #FFF;
+  width: 410px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Popup */
+.popup {
+  width: 350px;
+  background-color: #FFF;
+  border-radius: 6px;
+  position: absolute;
+  top: -9%;
+  text-align: center;
+  border: #363B4E solid 1px;
+  padding: 0 30px 30px;
+  visibility: hidden;
+}
+
+.open-popup {
+  visibility: visible;
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background-color: #FFF;
+  border: none;
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: #927FBF;
+  color: #FFF;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+
+
+/* Footer style */
+
+.footernav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footerul {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.footerul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+
+.footerul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.footerul li a:hover {
+  color: #927FBF;
+  cursor: pointer;
+}
+
+.p28 {
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+
+.p28 a {
+  text-decoration: none;
+  color: black;
+}
+
+.p28 a:hover {
+  color: #927FBF;
+  cursor: pointer;   
+}
+
+
 
 /* Making Responsive */
 @media(max-width : 992px){
