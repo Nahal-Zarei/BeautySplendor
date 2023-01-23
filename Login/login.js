@@ -18,7 +18,7 @@ tabs.addEventListener("click", e => {
 	element.classList.add("active");
 });
 
-const passwordInput = document.getElementById("password2");
+const passwordInput = document.getElementById("Registerpassword");
 const confirmPasswordInput = document.getElementById("confirmPassword");
 const registerBtn = document.querySelector(".register-btn");
 
@@ -26,9 +26,9 @@ const registerBtn = document.querySelector(".register-btn");
 
 registerBtn.addEventListener("click", (e) => {
 	e.preventDefault();
-	console.log(passwordInput.value)
-	console.log(confirmPasswordInput.value)
-	if(Number(passwordInput.value.length) > 6){
+	let inputValue = passwordInput.value;
+	console.log(String(inputValue.length))
+	if(String(inputValue).length > 5){
 		if(passwordInput.value === confirmPasswordInput.value){
 			alert("Welcome");
 		}else{

@@ -289,7 +289,6 @@ body {
   margin-right: 60px;
 }
 
-/*delete margin left and right to have full screen box*/
 .Box {
   display: flex;
   justify-content: center;
@@ -307,12 +306,10 @@ body {
 .Box-details h4 {
   margin-left: 10px;
   font-size: 18px;
-  display: flex;
-  justify-content: center;
-  margin-top: 13px;
+  margin-top: 15px;
 }
 .Box-details p {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 /* what we offer */
@@ -491,13 +488,64 @@ body {
 
 
 /* Making Responsive */
-@media(max-width : 992px){
-  .header-list a{
-    font-size: 0.8rem;
-  }
-}
+/* @media(max-width : 992px){
+
+} */
 
 @media(max-width : 768px){
+
+#header {
+  display: block;
+}
+
+.header-list {
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-right: 185px;
+  position: relative;
+}
+
+.website-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.webiste-icons {
+  position: absolute;
+  top: 60px;
+  left: 290px;
+}
+
+#carouselExampleIndicators {
+  margin-top: 35px;  
+}
+
+.newArrival-container .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.Prices-cards {
+  display: block;
+}
+
+.offer-card div{
+  width: 250px;
+}
+
+.Box {
+  display: none;
+}
+
+.footerul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  /* 
 #header {
     grid-template-columns: 4fr 0.5fr;
 }
@@ -515,7 +563,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 40%;
+    padding-right: 40%; 
 }
 
 .header-list {
@@ -542,5 +590,5 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    }
-}
+    } */
+} 
