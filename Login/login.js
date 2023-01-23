@@ -17,3 +17,24 @@ tabs.addEventListener("click", e => {
 	const element = document.getElementById(id);
 	element.classList.add("active");
 });
+
+const passwordInput = document.getElementById("password2");
+const confirmPasswordInput = document.getElementById("confirmPassword");
+const registerBtn = document.querySelector(".register-btn");
+
+
+
+registerBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+	console.log(passwordInput.value)
+	console.log(confirmPasswordInput.value)
+	if(Number(passwordInput.value.length) > 6){
+		if(passwordInput.value === confirmPasswordInput.value){
+			alert("Welcome");
+		}else{
+			alert("Your password is not confirmed.")
+		}
+	}else{
+		alert("Your password must be atleast 6 charecters");
+	}
+});
