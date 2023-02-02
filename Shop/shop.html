@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="shop.css">
+    <title>shop</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <!-- Menu -->
+            <nav class="header-list">
+                <div class="header-list-items">
+                    <a href="../home.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="../News/news.html">News</a>
+                    <a href="#">Blog</a>
+                </div>
+           </nav>
+            <!-- Website's Logo -->
+            <div class="website-logo">
+                <img src="/Images/beautysplendor-high-resolution-logo-color-on-transparent-background.png" alt="Splendor logo" title="Splendor Logo">
+           </div>
+            <!-- Website's Icons -->
+            <div class="webiste-icons">
+                <nav class="navbar navbar-light">
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </nav>
+                <span class="material-icons" title="Shopping Bag">shopping_bag</span>
+                <a href="../Login/signin.html"><span class="material-icons" title="Sign in">perm_identity</span></a>
+           </div>
+           <!-- Burger menu -->
+           <div class="burgerContainer" onclick="burgerclick()">
+            <div class="ham">
+                <div class="bur">
+                    <span class="ger q"></span>
+                    <span class="ger w"></span>
+                    <span class="ger e"></span>
+                </div>
+            </div>
+       </div>
+        </div>
+        <!-- Reading progress bar -->
+        <div id="progress-bar"></div>
+    </header>
+    <hr>
+    <main>
+        <div class="backdrop"></div>
+        <div id="loading"></div>
+        <div class="container"></div>
+    </main>
+    <footer>
+        <nav class="footernav">
+            <ul class="footerul">
+                <li><a href="#">DRIBBBLE</a></li>
+                <li><a href="#">FACEBOOK</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+                <li><a href="#">LINKEDIN</a></li>
+                <li><a href="#">PINTEREST</a></li>
+                <li><a href="#">TWITTER</a></li>
+            </ul>
+        </nav>
+        <p class="p28">Copyright © 2023  ·&nbsp;<a href="#"> Splendor Beauty&nbsp; </a> by Nahal ·&nbsp; <a href="Login/signin.html"> Log in </a></p>
+    </footer>
+    <script src="shop.js"></script>
+</body>
+</html>
